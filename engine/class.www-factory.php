@@ -118,7 +118,7 @@ class WWW_Factory {
 		
 			// Address is required
 			if($address && $address!=''){
-				if(!class_exists('WWW_Wrapper') && file_exists(__DIR__.DIRECTORY_SEPARATOR.'class.www-factory.php')){
+				if(!class_exists('WWW_Wrapper') && file_exists(__DIR__.DIRECTORY_SEPARATOR.'class.www-wrapper.php')){
 					require(__DIR__.DIRECTORY_SEPARATOR.'class.www-wrapper.php');
 				}
 				// Returning new Wrapper object
